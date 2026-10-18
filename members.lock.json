@@ -10,8 +10,8 @@
     },
     "dsh-structured-document-view": {
       "version": "0.2.1-rc.2+rev.1",
-      "commit": "1b06f3fce6da4e71d7d0326f9d7cfbc4cc447d02",
-      "integrity": "sha512-lq4Ao8Sf5oebZSfT+A19NeD9VpWYROX4A4w5paCU9zaRaf2wKVK/Wl7AmbMmk6CZDDnjbY/jBRA3Vs2jfvPF/g=="
+      "commit": "6e9eae63a035e32ee8746e28b0ab1b736caeed11",
+      "integrity": "sha512-iBZrs0JbBrDTBSYdo25KxOnGf6mW6xSeHDEGZG+SWQvYItLbe1+NZE5j2MXG8dtSe0la1GNQIxk/MrE/nt0MTQ=="
     },
     "dsh-better-sidebar-controller": {
       "version": "0.2.1-rc.2+rev.1",

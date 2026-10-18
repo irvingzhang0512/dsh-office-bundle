@@ -41,7 +41,7 @@ export default {
   entry: { client: 'src/client/index.tsx' },
   outDir: 'lib', format: 'cjs', platform: 'browser', dts: false, clean: false,
   plugins: [{name:'office-client-purity',resolveId(id:string){if(id.startsWith('@deepseek-ai/') || builtinModules.includes(id) || id.startsWith('node:'))throw Error('client purity: '+id);return null}}],
-  deps: { neverBundle: ['react', 'react/jsx-runtime', 'cordis'] },
+  deps: { neverBundle: ['react', 'react/jsx-runtime', 'cordis', '@deepseek-ai/dsh-client-ui-primitives'] },
   define: { __DWB_VERSION__: JSON.stringify(readOwnVersion()) },
   outputOptions: {
     entryFileNames: 'client.js', codeSplitting: false,

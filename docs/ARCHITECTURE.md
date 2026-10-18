@@ -21,3 +21,5 @@ React 页面打开读取、刷新按钮重读；卸载 AbortController，迟到�
 ## 构建与迁移
 
 TypeScript + tsdown + vitest；浏览器禁止Node／官方宿主 value import。完整包包括lib、patch、locale、生成成员锁、说明文档、LICENSE。四成员作为精确dependencies与bundledDependencies；生产树实体化，关闭autoInstallPeers／脚本，官方peers不内嵌。npm11.6.2 pack --ignore-scripts保留完整版本。根工具只接受Desktop固定锁，支持pack/plan/apply/rollback/snapshot。旧独立disabled选择按原id最小写入；不覆盖未知字段或并发变化，不能无损表示时拒绝。回滚仅配置／安装组合，不覆盖业务数据。
+
+客户端刷新按钮使用宿主原生primitives，作为精确peer及客户端external提供，禁止内嵌宿主UI实现。真实官方setBundleEnabled可能在已有子组件停用时返回pending诊断；实际保存状态与套件partial分类单独核对，保留该官方行为。
