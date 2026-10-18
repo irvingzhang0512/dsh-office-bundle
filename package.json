@@ -1,0 +1,75 @@
+{
+  "name": "dsh-office-bundle",
+  "version": "0.2.1-rc.2+rev.1",
+  "description": "组合结构化文档、文档视图、侧边栏控制工具和讨论工作台，统一安装与启停。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "types": "./lib/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/types/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "cordis.patch.yml",
+    "members.lock.json",
+    "README.md",
+    "docs",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=24.21.0",
+    "dsh": "0.2.1-rc.2"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "build": "tsc -p tsconfig.json && tsdown -c tsdown.config.ts"
+  },
+  "dependencies": {
+    "dsh-structured-document": "0.2.1-rc.2+rev.1",
+    "dsh-structured-document-view": "0.2.1-rc.2+rev.1",
+    "dsh-better-sidebar-controller": "0.2.1-rc.2+rev.1",
+    "dsh-discussion-workbench": "0.2.1-rc.2+rev.1"
+  },
+  "bundledDependencies": [
+    "dsh-structured-document",
+    "dsh-structured-document-view",
+    "dsh-better-sidebar-controller",
+    "dsh-discussion-workbench"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/dsh": "0.2.1-rc.2",
+    "@deepseek-ai/cordis": "4.0.5",
+    "@deepseek-ai/schemastery": "3.18.5",
+    "@deepseek-ai/dsh-client-connection": "0.2.1-rc.2",
+    "dsh-better-sidebar": "0.28.0",
+    "react": "18.3.1"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "tsdown": "0.23.1",
+    "vitest": "4.1.12",
+    "@types/node": "24.19.2",
+    "@types/react": "18.3.31",
+    "@deepseek-ai/cordis": "4.0.5",
+    "@deepseek-ai/cordis-plugin-loader": "1.0.6",
+    "@deepseek-ai/schemastery": "3.18.5"
+  }
+}

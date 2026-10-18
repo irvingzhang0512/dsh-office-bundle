@@ -1,0 +1,54 @@
+- insert:
+    - id: dsh-office-bundle
+      name: dsh-office-bundle
+      inject:
+        - loader
+        - pluginPackages
+        - profileContext
+        - webServer
+        - connection
+      config: {}
+    - id: dsh-office-bundle-members
+      name: cordis:group
+      group: true
+      config:
+        - id: dsh-structured-document
+          name: dsh-structured-document
+          inject:
+            - tools
+            - skills
+            - sessions
+            - sessionController
+          config: {}
+        - id: dsh-structured-document-view
+          name: dsh-structured-document-view
+          inject:
+            - tools
+            - webServer
+            - connection
+            - skills
+          config: {}
+        - id: dsh-better-sidebar-controller
+          name: dsh-better-sidebar-controller
+          inject:
+            - tools
+            - webServer
+            - sessions
+            - connection
+            - skills
+            - sessionController
+          config: {}
+        - id: dsh-discussion-workbench
+          name: dsh-discussion-workbench
+          inject:
+            - tools
+            - skills
+            - sessions
+            - webServer
+            - connection
+            - systemPrompt
+            - structuredDocument
+            - sidebarController
+            - structuredDocumentView
+            - sessionController
+          config: {}
