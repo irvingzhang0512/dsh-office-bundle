@@ -5,23 +5,23 @@
   "members": {
     "dsh-structured-document": {
       "version": "0.2.1-rc.2+rev.1",
-      "commit": "5e57909d196f93e3ffb28ce9a457fbee9b9c176f",
-      "integrity": "sha512-7ceMAh6y1kvsKId9+ZT4vnjcNKLxfG8gNdHI2BkaqvWVo3MeRMhpETjcGO9fQyWLwfMUaaQG2N4mEoYvUZZJng=="
+      "commit": "94b76ad6ab73bb36c99e5201e713f36b2602aecc",
+      "integrity": "sha512-eI25Q6sxIvTUvDJe83hCSGhdZQRFVKzbokk22LHsSTgcQLYbxceymEALix5TTgI14iCHb5JYTtVXtdgx4cYUAg=="
     },
     "dsh-structured-document-view": {
       "version": "0.2.1-rc.2+rev.1",
-      "commit": "6e9eae63a035e32ee8746e28b0ab1b736caeed11",
-      "integrity": "sha512-iBZrs0JbBrDTBSYdo25KxOnGf6mW6xSeHDEGZG+SWQvYItLbe1+NZE5j2MXG8dtSe0la1GNQIxk/MrE/nt0MTQ=="
+      "commit": "2973c36a73b40ef217940708cf23142a42976bdb",
+      "integrity": "sha512-UoHUBs+YCRpXTtSXQJi4utCrCMQaQ17yfm5kjl6d43cSdPYUCuKTRuVbm0Ufa0diP6/Mb5C2/hW5ryLewBUv1g=="
     },
     "dsh-better-sidebar-controller": {
       "version": "0.2.1-rc.2+rev.1",
-      "commit": "32ea09b9c3bd6d28a3376aff3f121f4b08bcf8b1",
-      "integrity": "sha512-lIlNFPT88CjnaLJ9lqTPm7p6YkJ9jFchJDxHvj34LROQUqjjgmFefoT9Iz5qsOkawlZFFV29RL/3RCfd93ofvw=="
+      "commit": "ecc920d79a853d1df65ed1b15fc25763f5246e86",
+      "integrity": "sha512-h0GLeabeVgAOd33Ni0Iu4Rxr2qQrW8s06CGsMi5tGj9gC4Mtlqdv0xq20PY4PkgTJJQNcvypQTDjyMaRazFFfQ=="
     },
     "dsh-discussion-workbench": {
       "version": "0.2.1-rc.2+rev.1",
-      "commit": "4919b58f38d023036d020e2eb7ed65509415b584",
-      "integrity": "sha512-xhBugMYseae5iLc30DPXghPYXpPkW9fnenpRhajK2BRb0ARA8TlSwdKMmWGtRy3/Iba5wPcbqB/MN7tE3O47BQ=="
+      "commit": "cfa51a2d6471a2e3d1dd70944eab456b29cb5310",
+      "integrity": "sha512-myS4Jht6VFwbh0esc8yJAnqL761L8c949EnyrtEPlBpKPVo8RMq2kcduVL4MMz/SudwKzFO+wTkDf71BSfdV6g=="
     }
   }
 }
