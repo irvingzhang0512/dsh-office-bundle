@@ -50,7 +50,7 @@
 
 ## 更多文档
 
-- [当前规格](docs/SPEC.md)
+- [OpenSpec 现行规格与迁移索引](openspec/MIGRATION.md)：旧 docs/SPEC.md 与原始需求全文保留并冻结，后续需求在 OpenSpec 维护。
 - [技术与迁移契约](docs/ARCHITECTURE.md)
 
 关闭文档视图等依赖组件后，DSH可能提示工作台正在等待对应服务；套件状态会显示“部分组件已停用或正在等待”。需要完整办公链路时重新启用相应组件。
