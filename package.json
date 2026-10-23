@@ -2,6 +2,10 @@
   "name": "dsh-office-bundle",
   "version": "0.2.1-rc.2+rev.1",
   "description": "组合结构化文档、文档视图、侧边栏控制工具和讨论工作台，统一安装与启停。",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/irvingzhang0512/dsh-office-bundle.git"
+  },
   "type": "module",
   "main": "./lib/index.js",
   "types": "./lib/types/index.d.ts",
