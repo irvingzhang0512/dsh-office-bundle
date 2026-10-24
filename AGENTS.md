@@ -5,3 +5,7 @@
 保留用户改动和个人项目／会议／计划／业务资料，不因需求迁移移动、改写或复制到公共规格。OpenSpec 校验通过、artifacts ready 或任务勾选不代表批准、实现或产品验证；预期不变的 Bug 直接修复，不强制新提案，不改规格掩盖错误。运行代码修改执行 typecheck、test、build；纯文档仅严格校验 OpenSpec、编号、状态与链接，不提高包版本或重装。套件不持有业务数据，不复制组件工具与 Skill，不修改官方宿主。
 
 用户于 2026-10-24 选择与其他插件相同的公开 GitHub 仓库，实际 origin 为 https://github.com/irvingzhang0512/dsh-office-bundle.git 。仓库创建、源码推送、预构建 Release 可下载和公网安装分别核实；仓库存在不表示安装包已经发布。分发准备按根 docs/PLUGIN-MARKET.md 核对完整产物与真实元信息，推送与发布按会话具体授权处理。
+
+## 2026-10-24 Git 分发约定
+
+根 windows-personal-workspace-v2 已确认自研通过 GitHub 固定提交安装：提交完整运行产物和资源，不依赖安装期构建 hook；开发检查仍显式运行既有 typecheck／test／build 或 JS test／lint。此约定替代旧的 lib 忽略／现场 prepack 做法；不提交 node_modules，不修改业务行为。源码推送、公网安装和本地验证分别记录。

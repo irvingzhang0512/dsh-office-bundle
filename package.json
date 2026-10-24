@@ -47,17 +47,11 @@
     "build": "tsc -p tsconfig.json && tsdown -c tsdown.config.ts"
   },
   "dependencies": {
-    "dsh-structured-document": "0.2.1-rc.2+rev.1",
-    "dsh-structured-document-view": "0.2.1-rc.2+rev.1",
-    "dsh-better-sidebar-controller": "0.2.1-rc.2+rev.1",
-    "dsh-discussion-workbench": "0.2.1-rc.2+rev.1"
+    "dsh-structured-document": "git+https://github.com/irvingzhang0512/dsh-structured-document.git#a9e75dc02e7b6c5ef7fb86f5917224c8398389e9",
+    "dsh-structured-document-view": "git+https://github.com/irvingzhang0512/dsh-structured-document-view.git#8d2e200d1fa247365197469f32495352d38e0a94",
+    "dsh-better-sidebar-controller": "git+https://github.com/irvingzhang0512/dsh-better-sidebar-controller.git#9db10d9d4d8e89d28cc982f3a62c2e6c9b24963c",
+    "dsh-discussion-workbench": "git+https://github.com/irvingzhang0512/dsh-discussion-workbench.git#76009c6c00f6edba4255ebc0d5fd91ee3800e82f"
   },
-  "bundledDependencies": [
-    "dsh-structured-document",
-    "dsh-structured-document-view",
-    "dsh-better-sidebar-controller",
-    "dsh-discussion-workbench"
-  ],
   "peerDependencies": {
     "@deepseek-ai/dsh": "0.2.1-rc.2",
     "@deepseek-ai/cordis": "4.0.5",

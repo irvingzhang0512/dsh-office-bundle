@@ -5,23 +5,23 @@
   "members": {
     "dsh-structured-document": {
       "version": "0.2.1-rc.2+rev.1",
-      "commit": "913ee0306d555e10ebfcf59d42c7ee1637bfe6e7",
-      "integrity": "sha512-fITtIsM0Y8IiSEHlaWRAD9E93MwjgYcXylIdiJyG4VzyycnSgK4EmGkGJDFYUT5Kk7+JRy+ccU2x6/v/KM4cmA=="
+      "commit": "a9e75dc02e7b6c5ef7fb86f5917224c8398389e9",
+      "source": "git+https://github.com/irvingzhang0512/dsh-structured-document.git#a9e75dc02e7b6c5ef7fb86f5917224c8398389e9"
     },
     "dsh-structured-document-view": {
       "version": "0.2.1-rc.2+rev.1",
-      "commit": "87a8330cace596e6ba404d5ae84ff398bcd44516",
-      "integrity": "sha512-bhpqmRNtqs6c/i1P45kHz/r6VVfdOp1CguTXZDsay+7cAbSUUDsfRkEsoZQ3umP7/aaeWp7c4pZ6MxxC0udDRg=="
+      "commit": "8d2e200d1fa247365197469f32495352d38e0a94",
+      "source": "git+https://github.com/irvingzhang0512/dsh-structured-document-view.git#8d2e200d1fa247365197469f32495352d38e0a94"
     },
     "dsh-better-sidebar-controller": {
       "version": "0.2.1-rc.2+rev.1",
-      "commit": "fcf6ee1c696a1f6ace7c8bb311a32f8d5c5ef739",
-      "integrity": "sha512-9T7UD/0XBqqVYDMy8bukN7T/AlpVeUU+UKlnYl9WQN0nT4W8rzS/e7C6Qh0knXFAqanA/5iDWlcw7NP5Ldp0Nw=="
+      "commit": "9db10d9d4d8e89d28cc982f3a62c2e6c9b24963c",
+      "source": "git+https://github.com/irvingzhang0512/dsh-better-sidebar-controller.git#9db10d9d4d8e89d28cc982f3a62c2e6c9b24963c"
     },
     "dsh-discussion-workbench": {
       "version": "0.2.1-rc.2+rev.1",
-      "commit": "2866259a91bcdeaf8b0928d7e3f2ad3292b5261a",
-      "integrity": "sha512-iAI6F51yXmjVWLsHvuYvQsgqD5DwjVwE9O+dCMrzBjWhbiIMVZ+GMJiuqmpHcS4HyWAyoKQFvIjSt2KXbrqazQ=="
+      "commit": "76009c6c00f6edba4255ebc0d5fd91ee3800e82f",
+      "source": "git+https://github.com/irvingzhang0512/dsh-discussion-workbench.git#76009c6c00f6edba4255ebc0d5fd91ee3800e82f"
     }
   }
 }
