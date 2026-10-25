@@ -1,6 +1,6 @@
 {
   "name": "dsh-office-bundle",
-  "version": "0.2.1-rc.2+rev.1",
+  "version": "0.2.1-rc.3+rev.1",
   "description": "组合结构化文档、文档视图、侧边栏控制工具和讨论工作台，统一安装与启停。",
   "repository": {
     "type": "git",
@@ -30,7 +30,7 @@
   ],
   "engines": {
     "node": ">=24.21.0",
-    "dsh": "0.2.1-rc.2"
+    "dsh": "0.2.1-rc.3"
   },
   "dsh": {
     "bundle": {
@@ -47,17 +47,17 @@
     "build": "tsc -p tsconfig.json && tsdown -c tsdown.config.ts"
   },
   "dependencies": {
-    "dsh-structured-document": "git+https://github.com/irvingzhang0512/dsh-structured-document.git#a9e75dc02e7b6c5ef7fb86f5917224c8398389e9",
-    "dsh-structured-document-view": "git+https://github.com/irvingzhang0512/dsh-structured-document-view.git#8d2e200d1fa247365197469f32495352d38e0a94",
-    "dsh-better-sidebar-controller": "git+https://github.com/irvingzhang0512/dsh-better-sidebar-controller.git#9db10d9d4d8e89d28cc982f3a62c2e6c9b24963c",
-    "dsh-discussion-workbench": "git+https://github.com/irvingzhang0512/dsh-discussion-workbench.git#76009c6c00f6edba4255ebc0d5fd91ee3800e82f"
+    "dsh-structured-document": "git+https://github.com/irvingzhang0512/dsh-structured-document.git#56c913b35eebcd6d85e15e02201daad2c7096052",
+    "dsh-structured-document-view": "git+https://github.com/irvingzhang0512/dsh-structured-document-view.git#eec3bfdad00428af8d47e6c33d269d262d8579b2",
+    "dsh-better-sidebar-controller": "git+https://github.com/irvingzhang0512/dsh-better-sidebar-controller.git#2a03a5fb23eda51bdaaa94c03d511a2ab21f4fb7",
+    "dsh-discussion-workbench": "git+https://github.com/irvingzhang0512/dsh-discussion-workbench.git#22f5524354ee81552e5626508dcb73eaa2c69086"
   },
   "peerDependencies": {
-    "@deepseek-ai/dsh": "0.2.1-rc.2",
+    "@deepseek-ai/dsh": "0.2.1-rc.3",
     "@deepseek-ai/cordis": "4.0.5",
     "@deepseek-ai/schemastery": "3.18.5",
-    "@deepseek-ai/dsh-client-connection": "0.2.1-rc.2",
-    "@deepseek-ai/dsh-client-ui-primitives": "0.2.1-rc.2",
+    "@deepseek-ai/dsh-client-connection": "0.2.1-rc.3",
+    "@deepseek-ai/dsh-client-ui-primitives": "0.2.1-rc.3",
     "dsh-better-sidebar": "0.28.0",
     "react": "18.3.1"
   },
