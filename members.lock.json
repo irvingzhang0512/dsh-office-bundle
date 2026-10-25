@@ -5,23 +5,23 @@
   "members": {
     "dsh-structured-document": {
       "version": "0.2.1-rc.3+rev.1",
-      "commit": "56c913b35eebcd6d85e15e02201daad2c7096052",
-      "source": "git+https://github.com/irvingzhang0512/dsh-structured-document.git#56c913b35eebcd6d85e15e02201daad2c7096052"
+      "commit": "84d586776a553baa7f1b7e34cbc6cb552c042991",
+      "source": "git+https://github.com/irvingzhang0512/dsh-structured-document.git#84d586776a553baa7f1b7e34cbc6cb552c042991"
     },
     "dsh-structured-document-view": {
       "version": "0.2.1-rc.3+rev.1",
-      "commit": "eec3bfdad00428af8d47e6c33d269d262d8579b2",
-      "source": "git+https://github.com/irvingzhang0512/dsh-structured-document-view.git#eec3bfdad00428af8d47e6c33d269d262d8579b2"
+      "commit": "d0cc899b208266cf7aa1562cb2c792d95d0854ee",
+      "source": "git+https://github.com/irvingzhang0512/dsh-structured-document-view.git#d0cc899b208266cf7aa1562cb2c792d95d0854ee"
     },
     "dsh-better-sidebar-controller": {
       "version": "0.2.1-rc.3+rev.1",
-      "commit": "2a03a5fb23eda51bdaaa94c03d511a2ab21f4fb7",
-      "source": "git+https://github.com/irvingzhang0512/dsh-better-sidebar-controller.git#2a03a5fb23eda51bdaaa94c03d511a2ab21f4fb7"
+      "commit": "34583638dd2bdbf45e92f32433768d8318ba2bc2",
+      "source": "git+https://github.com/irvingzhang0512/dsh-better-sidebar-controller.git#34583638dd2bdbf45e92f32433768d8318ba2bc2"
     },
     "dsh-discussion-workbench": {
       "version": "0.2.1-rc.3+rev.1",
-      "commit": "22f5524354ee81552e5626508dcb73eaa2c69086",
-      "source": "git+https://github.com/irvingzhang0512/dsh-discussion-workbench.git#22f5524354ee81552e5626508dcb73eaa2c69086"
+      "commit": "ff2df19c4318af221ba0943543acbb410d74a47e",
+      "source": "git+https://github.com/irvingzhang0512/dsh-discussion-workbench.git#ff2df19c4318af221ba0943543acbb410d74a47e"
     }
   }
 }

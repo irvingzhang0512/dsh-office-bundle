@@ -1,7 +1,7 @@
 export const MEMBERS = ['dsh-structured-document', 'dsh-structured-document-view', 'dsh-better-sidebar-controller', 'dsh-discussion-workbench'] as const
 export const SUITE = 'dsh-office-bundle'
-export const VERSION = '0.2.1-rc.2+rev.1'
-export const DSH_VERSION = '0.2.1-rc.2'
+export const VERSION = '0.2.1-rc.3+rev.1'
+export const DSH_VERSION = '0.2.1-rc.3'
 export interface MemberStatus {
   packageName: string
   entryId: string
