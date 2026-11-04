@@ -7,7 +7,7 @@ import {collectStatus,type Entry} from '../src/status.ts'
 import {statusHandler,type HostContext} from '../src/index.ts'
 function fixture(run:(ctx:HostContext,entries:Entry[],dir:string)=>void){
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'office-status-'))
- fs.writeFileSync(path.join(dir,'package.json'),JSON.stringify({version:'0.2.1-rc.5',dsh:{profile:{bundles:['dsh-office-bundle','dsh-better-sidebar']}}}))
+ fs.writeFileSync(path.join(dir,'package.json'),JSON.stringify({version:'0.2.2-rc.1',dsh:{profile:{bundles:['dsh-office-bundle','dsh-better-sidebar']}}}))
  const entries=['dsh-office-bundle',...MEMBERS,'dsh-better-sidebar'].map(name=>({options:{name,id:name,inject:name==='dsh-discussion-workbench'?['structuredDocument']:[]},disabled:false,fiber:{state:2,uid:1},parent:{tree:{ctx:{baseUrl:'file:///profile/package.json'}}}}))
  const ctx:HostContext={loader:{entries:()=>entries},pluginPackages:{packageOf:name=>({version:name==='dsh-better-sidebar'?'0.28.2':VERSION})},profileContext:{dir,installAnchor:path.join(dir,'package.json')},connection:{requestRejection:()=>undefined},webServer:{register:()=>()=>{}},effect:()=>{}}
  try{run(ctx,entries,dir)}finally{fs.rmSync(dir,{recursive:true,force:true})}
@@ -24,7 +24,7 @@ describe('实际来源与状态分类',()=>{
  it('实际版本缺失、加载异常与重复入口blocked',()=>fixture((ctx,entries,dir)=>{
   ctx.pluginPackages.packageOf=()=>undefined;expect(collectStatus(ctx).state).toBe('blocked')
   ctx.pluginPackages.packageOf=name=>({version:name==='dsh-better-sidebar'?'0.28.2':VERSION});entries[1].fiber!.state=3;expect(collectStatus(ctx).members[0].reason).toBe('load-error')
-  fs.writeFileSync(path.join(dir,'package.json'),JSON.stringify({version:'0.2.1-rc.5',dsh:{profile:{bundles:['dsh-office-bundle',MEMBERS[0]]}}}));expect(collectStatus(ctx).members[0].reason).toBe('duplicate-source')
+  fs.writeFileSync(path.join(dir,'package.json'),JSON.stringify({version:'0.2.2-rc.1',dsh:{profile:{bundles:['dsh-office-bundle',MEMBERS[0]]}}}));expect(collectStatus(ctx).members[0].reason).toBe('duplicate-source')
  }))
  it('路由遵守宿主鉴权、405与503且释放唯一注册',()=>fixture(ctx=>{
   let code=0,body='',allow='',disposed=0

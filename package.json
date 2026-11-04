@@ -1,6 +1,6 @@
 {
   "name": "dsh-office-bundle",
-  "version": "0.2.1-rc.5+rev.1",
+  "version": "0.2.2-rc.1+rev.1",
   "description": "组合结构化文档、文档视图、侧边栏控制工具和讨论工作台，统一安装与启停。",
   "repository": {
     "type": "git",
@@ -30,7 +30,7 @@
   ],
   "engines": {
     "node": ">=24.21.0",
-    "dsh": "0.2.1-rc.5"
+    "dsh": "0.2.2-rc.1"
   },
   "dsh": {
     "bundle": {
@@ -47,17 +47,17 @@
     "build": "tsc -p tsconfig.json && tsdown -c tsdown.config.ts"
   },
   "dependencies": {
-    "dsh-structured-document": "git+https://github.com/irvingzhang0512/dsh-structured-document.git#d4772d818b74d6ca6d58273f1ead111d53de5dbc",
-    "dsh-structured-document-view": "git+https://github.com/irvingzhang0512/dsh-structured-document-view.git#847df03f138a84422eadf46449b05679e28fa618",
-    "dsh-better-sidebar-controller": "git+https://github.com/irvingzhang0512/dsh-better-sidebar-controller.git#58c4d0976b308ecc6794082a9b2925d87c58909d",
-    "dsh-discussion-workbench": "git+https://github.com/irvingzhang0512/dsh-discussion-workbench.git#292dbd001e459981d9305df0f5e31fa874b766f6"
+    "dsh-structured-document": "git+https://github.com/irvingzhang0512/dsh-structured-document.git#9408d04212b54fc95b3fe53f7671fe926c4e0a59",
+    "dsh-structured-document-view": "git+https://github.com/irvingzhang0512/dsh-structured-document-view.git#66a7445d60f26c358ba0066bc7858083540352a4",
+    "dsh-better-sidebar-controller": "git+https://github.com/irvingzhang0512/dsh-better-sidebar-controller.git#a84fda9c3d87cf3df8cd5e6474b45f0fbd4c4729",
+    "dsh-discussion-workbench": "git+https://github.com/irvingzhang0512/dsh-discussion-workbench.git#399591ef5b4ddaa9b0c105e322efa65490296d6f"
   },
   "peerDependencies": {
-    "@deepseek-ai/dsh": "0.2.1-rc.5",
-    "@deepseek-ai/cordis": "4.0.5",
-    "@deepseek-ai/schemastery": "3.18.5",
-    "@deepseek-ai/dsh-client-connection": "0.2.1-rc.5",
-    "@deepseek-ai/dsh-client-ui-primitives": "0.2.1-rc.5",
+    "@deepseek-ai/dsh": "0.2.2-rc.1",
+    "@deepseek-ai/cordis": "4.1.0",
+    "@deepseek-ai/schemastery": "3.19.0",
+    "@deepseek-ai/dsh-client-connection": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-client-ui-primitives": "0.2.2-rc.1",
     "dsh-better-sidebar": "0.28.2",
     "react": "18.3.1"
   },
@@ -67,8 +67,8 @@
     "vitest": "4.1.12",
     "@types/node": "24.19.2",
     "@types/react": "18.3.31",
-    "@deepseek-ai/cordis": "4.0.5",
-    "@deepseek-ai/cordis-plugin-loader": "1.0.6",
-    "@deepseek-ai/schemastery": "3.18.5"
+    "@deepseek-ai/cordis": "4.1.0",
+    "@deepseek-ai/cordis-plugin-loader": "1.1.0",
+    "@deepseek-ai/schemastery": "3.19.0"
   }
 }
