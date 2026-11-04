@@ -7,9 +7,9 @@ import {collectStatus,type Entry} from '../src/status.ts'
 import {statusHandler,type HostContext} from '../src/index.ts'
 function fixture(run:(ctx:HostContext,entries:Entry[],dir:string)=>void){
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'office-status-'))
- fs.writeFileSync(path.join(dir,'package.json'),JSON.stringify({version:'0.2.1-rc.3',dsh:{profile:{bundles:['dsh-office-bundle','dsh-better-sidebar']}}}))
+ fs.writeFileSync(path.join(dir,'package.json'),JSON.stringify({version:'0.2.1-rc.5',dsh:{profile:{bundles:['dsh-office-bundle','dsh-better-sidebar']}}}))
  const entries=['dsh-office-bundle',...MEMBERS,'dsh-better-sidebar'].map(name=>({options:{name,id:name,inject:name==='dsh-discussion-workbench'?['structuredDocument']:[]},disabled:false,fiber:{state:2,uid:1},parent:{tree:{ctx:{baseUrl:'file:///profile/package.json'}}}}))
- const ctx:HostContext={loader:{entries:()=>entries},pluginPackages:{packageOf:name=>({version:name==='dsh-better-sidebar'?'0.28.0':VERSION})},profileContext:{dir,installAnchor:path.join(dir,'package.json')},connection:{requestRejection:()=>undefined},webServer:{register:()=>()=>{}},effect:()=>{}}
+ const ctx:HostContext={loader:{entries:()=>entries},pluginPackages:{packageOf:name=>({version:name==='dsh-better-sidebar'?'0.28.2':VERSION})},profileContext:{dir,installAnchor:path.join(dir,'package.json')},connection:{requestRejection:()=>undefined},webServer:{register:()=>()=>{}},effect:()=>{}}
  try{run(ctx,entries,dir)}finally{fs.rmSync(dir,{recursive:true,force:true})}
 }
 describe('实际来源与状态分类',()=>{
@@ -23,8 +23,8 @@ describe('实际来源与状态分类',()=>{
  it('主动停用与依赖等待保留partial',()=>fixture((ctx,entries)=>{entries[1].disabled=true;entries[4].fiber!.state=0;const status=collectStatus(ctx);expect(status.state).toBe('partial');expect(status.members[3].reason).toBe('dependency-disabled')}))
  it('实际版本缺失、加载异常与重复入口blocked',()=>fixture((ctx,entries,dir)=>{
   ctx.pluginPackages.packageOf=()=>undefined;expect(collectStatus(ctx).state).toBe('blocked')
-  ctx.pluginPackages.packageOf=name=>({version:name==='dsh-better-sidebar'?'0.28.0':VERSION});entries[1].fiber!.state=3;expect(collectStatus(ctx).members[0].reason).toBe('load-error')
-  fs.writeFileSync(path.join(dir,'package.json'),JSON.stringify({version:'0.2.1-rc.3',dsh:{profile:{bundles:['dsh-office-bundle',MEMBERS[0]]}}}));expect(collectStatus(ctx).members[0].reason).toBe('duplicate-source')
+  ctx.pluginPackages.packageOf=name=>({version:name==='dsh-better-sidebar'?'0.28.2':VERSION});entries[1].fiber!.state=3;expect(collectStatus(ctx).members[0].reason).toBe('load-error')
+  fs.writeFileSync(path.join(dir,'package.json'),JSON.stringify({version:'0.2.1-rc.5',dsh:{profile:{bundles:['dsh-office-bundle',MEMBERS[0]]}}}));expect(collectStatus(ctx).members[0].reason).toBe('duplicate-source')
  }))
  it('路由遵守宿主鉴权、405与503且释放唯一注册',()=>fixture(ctx=>{
   let code=0,body='',allow='',disposed=0
