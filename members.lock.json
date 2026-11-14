@@ -1,27 +1,27 @@
 {
   "schemaVersion": 1,
-  "dshVersion": "0.2.2-rc.1",
-  "version": "0.2.2-rc.1+rev.1",
+  "dshVersion": "0.2.2-rc.3",
+  "version": "0.2.2-rc.3+rev.1",
   "members": {
     "dsh-structured-document": {
-      "version": "0.2.2-rc.1+rev.1",
-      "commit": "9408d04212b54fc95b3fe53f7671fe926c4e0a59",
-      "source": "git+https://github.com/irvingzhang0512/dsh-structured-document.git#9408d04212b54fc95b3fe53f7671fe926c4e0a59"
+      "version": "0.2.2-rc.3+rev.1",
+      "commit": "e5109e9f8455de7486ae539953e25ec714764b05",
+      "source": "git+https://github.com/irvingzhang0512/dsh-structured-document.git#e5109e9f8455de7486ae539953e25ec714764b05"
     },
     "dsh-structured-document-view": {
-      "version": "0.2.2-rc.1+rev.1",
-      "commit": "66a7445d60f26c358ba0066bc7858083540352a4",
-      "source": "git+https://github.com/irvingzhang0512/dsh-structured-document-view.git#66a7445d60f26c358ba0066bc7858083540352a4"
+      "version": "0.2.2-rc.3+rev.1",
+      "commit": "1b0d9f6453a1109c798dad18aaa3a7d992fc9f0f",
+      "source": "git+https://github.com/irvingzhang0512/dsh-structured-document-view.git#1b0d9f6453a1109c798dad18aaa3a7d992fc9f0f"
     },
     "dsh-better-sidebar-controller": {
-      "version": "0.2.2-rc.1+rev.1",
-      "commit": "a84fda9c3d87cf3df8cd5e6474b45f0fbd4c4729",
-      "source": "git+https://github.com/irvingzhang0512/dsh-better-sidebar-controller.git#a84fda9c3d87cf3df8cd5e6474b45f0fbd4c4729"
+      "version": "0.2.2-rc.3+rev.1",
+      "commit": "124293577e414b4a063aad9c1487d708e219e0ad",
+      "source": "git+https://github.com/irvingzhang0512/dsh-better-sidebar-controller.git#124293577e414b4a063aad9c1487d708e219e0ad"
     },
     "dsh-discussion-workbench": {
-      "version": "0.2.2-rc.1+rev.1",
-      "commit": "399591ef5b4ddaa9b0c105e322efa65490296d6f",
-      "source": "git+https://github.com/irvingzhang0512/dsh-discussion-workbench.git#399591ef5b4ddaa9b0c105e322efa65490296d6f"
+      "version": "0.2.2-rc.3+rev.1",
+      "commit": "714e29dac855d432927c8db9ee97a39558476443",
+      "source": "git+https://github.com/irvingzhang0512/dsh-discussion-workbench.git#714e29dac855d432927c8db9ee97a39558476443"
     }
   }
 }
