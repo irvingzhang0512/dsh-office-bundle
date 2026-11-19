@@ -1,6 +1,6 @@
 {
   "name": "dsh-office-bundle",
-  "version": "0.2.2-rc.3+rev.1",
+  "version": "0.2.2-rc.5+rev.1",
   "description": "组合结构化文档、文档视图、侧边栏控制工具和讨论工作台，统一安装与启停。",
   "repository": {
     "type": "git",
@@ -30,7 +30,7 @@
   ],
   "engines": {
     "node": ">=24.21.0",
-    "dsh": "0.2.2-rc.3"
+    "dsh": "0.2.2-rc.5"
   },
   "dsh": {
     "bundle": {
@@ -47,16 +47,16 @@
     "build": "tsc -p tsconfig.json && tsdown -c tsdown.config.ts"
   },
   "dependencies": {
-    "dsh-structured-document": "git+https://github.com/irvingzhang0512/dsh-structured-document.git#e5109e9f8455de7486ae539953e25ec714764b05",
-    "dsh-structured-document-view": "git+https://github.com/irvingzhang0512/dsh-structured-document-view.git#1b0d9f6453a1109c798dad18aaa3a7d992fc9f0f",
-    "dsh-better-sidebar-controller": "git+https://github.com/irvingzhang0512/dsh-better-sidebar-controller.git#124293577e414b4a063aad9c1487d708e219e0ad",
-    "dsh-discussion-workbench": "git+https://github.com/irvingzhang0512/dsh-discussion-workbench.git#714e29dac855d432927c8db9ee97a39558476443"
+    "dsh-structured-document": "git+https://github.com/irvingzhang0512/dsh-structured-document.git#3422c8f94a1cf9c9e2856ae01c6223f4733f603c",
+    "dsh-structured-document-view": "git+https://github.com/irvingzhang0512/dsh-structured-document-view.git#d290c8470a63424a56dd8feceb4138ec77bd2f74",
+    "dsh-better-sidebar-controller": "git+https://github.com/irvingzhang0512/dsh-better-sidebar-controller.git#49f5e567a0c4cf7feba190b2900afb7d230edf85",
+    "dsh-discussion-workbench": "git+https://github.com/irvingzhang0512/dsh-discussion-workbench.git#c1dc1fb190af145433a54665fa62ad283f1fedff"
   },
   "peerDependencies": {
-    "@deepseek-ai/dsh": "0.2.2-rc.3",
+    "@deepseek-ai/dsh": "0.2.2-rc.5",
     "@deepseek-ai/cordis": "4.1.0",
     "@deepseek-ai/schemastery": "3.19.0",
-    "@deepseek-ai/dsh-client-connection": "0.2.2-rc.3",
+    "@deepseek-ai/dsh-client-connection": "0.2.2-rc.5",
     "@deepseek-ai/dsh-client-ui-primitives": "0.2.2-rc.1",
     "dsh-better-sidebar": "0.32.1",
     "react": "18.3.1"
